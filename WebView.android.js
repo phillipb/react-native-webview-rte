@@ -88,6 +88,7 @@ export default class extends WebView {
         const advancedWebview = (
             <RNAdvancedWebView
                 {...webview.props}
+                ref={this.webViewRef}
                 allowFileAccessFromFileURLs={allowFileAccessFromFileURLs}
                 keyboardDisplayRequiresUserAction={keyboardDisplayRequiresUserAction}
                 hideAccessory={hideAccessory}
